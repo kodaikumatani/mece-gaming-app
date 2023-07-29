@@ -1,10 +1,12 @@
 name: "mece-gaming-app"
 
 services:
-  app:
-    build:
-      context: .
-      dockerfile: ./Dockerfile
-    ports:
-      - "8080:8080"
-    tty: true
+    app:
+        build:
+            context: .
+            dockerfile: ./Dockerfile
+        ports:
+            - "8080:8080"
+        tty: true
+        volumes:
+            - ./app:/go/src/app

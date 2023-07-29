@@ -1,4 +1,4 @@
-module yumemi-gaming-app
+module mece-gaming-app
 
 go 1.20
 
